@@ -1,4 +1,4 @@
-const Bill = require("../models/BillModel");
+const Bill = require("../models/billModel");
 exports.createBill = (req, res) => {
   console.log(req.body);
   const bill = new Bill({

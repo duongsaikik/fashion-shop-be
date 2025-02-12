@@ -1,4 +1,4 @@
-const Course = require("../models/CourseModel");
+const Course = require("../models/courseModel");
 const multer = require("multer");
 
 var storage = multer.diskStorage({
