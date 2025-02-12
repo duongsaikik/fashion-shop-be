@@ -23,11 +23,11 @@ app.use(BillRoutes);
 mongoose.Promise = global.Promise;
 
 // set up port number
-const port = 5035;
+const port = 5032;
 // set up mongoose
 mongoose
   .connect(
-    "mongodb+srv://clotheshop:clotheshop@cluster0.l86od.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-2rmsii-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true",
+    "mongodb+srv://user:saiki%40123@cluster0.aswbx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     //"mongodb://localhost:27017",
     {
       useNewUrlParser: true,
@@ -38,7 +38,7 @@ mongoose
     console.log("Database connected");
   })
   .catch((error) => {
-    console.log("Error connecting to database");
+    console.log("Error connecting to database",error);
   });
 
 app.listen(port, () => {
